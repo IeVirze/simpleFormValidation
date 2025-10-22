@@ -34,3 +34,7 @@ It was originally created as part of a study exercise, and later refined as a po
 _HTML5_ – structure
 _CSS3_ – layout and visual feedback
 _JavaScript (ES6)_ – validation logic and session storage
+
+## View of the registration form
+
+![Snaphsot of a registration form as-is](image.png)
