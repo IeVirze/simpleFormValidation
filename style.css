@@ -1,0 +1,114 @@
+/*Global styles*/
+body {
+    font-family: Arial, sans-serif;
+     margin: 40px;
+}
+
+.container{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/*Form styles*/
+.form-box {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 400px;
+    background-color: #f9f9f9;
+}
+
+.form-box h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Form field styles and validation based changes for colors*/
+input, textarea, select {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 4px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+    
+input.valid, select.valid, textarea.valid {
+    border-color: green; /*If input valid - show green border of the field*/
+}
+    
+input.invalid, select.invalid, textarea.invalid {
+    border-color: red; /*if input invalid - show red border of the field*/
+}
+
+/*Text color red for the validation error text that shows after the "Sab=glabāt" btton is pressed*/
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 2px;
+    display: none;
+}
+
+.congrats {
+    color: green;
+    font-size: 12px;
+    margin-top: 2px;
+    display: none;
+}
+
+/*Form button formatting*/    
+.buttons {
+    margin-top: 10px;
+    text-align: center;
+}
+    
+button {
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+/*checkbox and text alignment so they are side by side not on top of each other*/
+label[for="noteikumi"], 
+label:has(#noteikumi) {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* space between checkbox and text */
+}
+
+#noteikumi {
+    width: auto;
+    margin-top: 10px; /* gap from the "Komentāri" section */
+}
+
+/*Formatting for saved form value output box */
+.output {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+    background-color: #f5f5f5;
+    width: 350px;
+}
+    
+.output b {
+    display: inline-block;
+    width: 70px;
+}
+    
+.output a {
+    display: block;
+    margin-top: 8px;
+    color: blue;
+    cursor: pointer;
+}
+
+/*Formatting for rule link */
+#showRules {
+    color: blue;
+}
+
